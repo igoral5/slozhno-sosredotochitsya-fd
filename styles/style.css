@@ -210,7 +210,7 @@
 .main__title-image {
   color: var(--subtitle-color);
   background-color: var(--accent-color);
-  margin-block-end: 20px;
+  margin-block-end: var(--padding);
 }
 
 .image {
@@ -276,7 +276,7 @@
   }
 
   .main__what .main__title {
-    inline-size: 33vi;
+    inline-size: 25vi;
   }
 
   .main__what {
