@@ -275,6 +275,10 @@
     gap: 10px;
   }
 
+  .main__what .main__title {
+    inline-size: 33vi;
+  }
+
   .main__what {
     grid-template-columns: 1fr;
   }
@@ -288,7 +292,7 @@
   :root {
     --padding: 10px;
     --hf-margin: 40px;
-    --section-margin: 60px;
+    --section-margin: 50px;
   }
 
   .title {
@@ -301,6 +305,10 @@
 
   .header__text {
     grid-column: auto;
+  }
+
+  .main__what .main__title {
+    inline-size: auto;
   }
 
   .main__why {
