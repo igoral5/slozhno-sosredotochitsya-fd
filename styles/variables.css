@@ -5,8 +5,10 @@
 :root {
   --bg-color: #000028;
   --accent-color: #ff0070;
+  --accent-text-color: #ff0070;
   --text-color: #f1b2ce;
   --title-color: #db00ff;
+  --subtitle-color: #000028;
   --main-font: "IBM Plex mono";
   --bg-image: url(../images/cover-image-dark.png);
   --padding: 20px;

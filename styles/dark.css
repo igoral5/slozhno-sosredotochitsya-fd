@@ -11,21 +11,9 @@
   */
   --bg-color: #000028;
   --accent-color: #ff0070;
+  --accent-text-color: #ff0070;
   --text-color: #f1b2ce;
   --title-color: #db00ff;
+  --subtitle-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #000028;
-    --accent-color: #ff0070;
-    --text-color: #f1b2ce;
-    --title-color: #db00ff;
-    --bg-image: url(../images/cover-image-dark.png);
-  }
-
-  .theme-auto .header__decoration {
-    display: block;
-  }
 }

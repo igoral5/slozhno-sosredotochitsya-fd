@@ -11,8 +11,10 @@
   */
   --bg-color: #fff1f7;
   --accent-color: #ff8dcb;
+  --accent-text-color: #353430;
   --text-color: #353430;
   --title-color: #ffc2e6;
+  --subtitle-color: #353430;
   --bg-image: url(../images/cover-image-light.png);
 }
 
@@ -24,8 +26,10 @@
   :root {
     --bg-color: #fff1f7;
     --accent-color: #ff8dcb;
+    --accent-text-color: #353430;
     --text-color: #353430;
     --title-color: #ffc2e6;
+    --subtitle-color: #353430;
     --bg-image: url(../images/cover-image-light.png);
   }
 
