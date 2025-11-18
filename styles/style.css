@@ -158,6 +158,11 @@
   font-size: 1.125rem;
 }
 
+
+.margin-bottom-10px {
+  margin-block-end: 10px;
+}
+
 .main__card-text:not(:last-of-type) {
   margin-block-end: 10px;
 }
@@ -189,10 +194,6 @@
 
 .how-container {
   grid-template-columns: 1fr 2fr;
-}
-
-.how-container .main__card-title {
-  margin: 0;
 }
 
 .how {
