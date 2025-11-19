@@ -58,6 +58,7 @@
 
 .header__title {
   justify-self: start;
+  margin-inline-start: -0.12em;
 }
 
 .title-decor {
@@ -73,7 +74,6 @@
   line-height: 0.83;
   text-shadow: 4px 4px 0 var(--accent-color);
   margin-block: auto;
-  margin-inline-start: -0.1em;
 }
 
 .header__text-container {
@@ -269,7 +269,7 @@
     grid-template-rows: 5fr 1fr 5fr;
   }
 
-  .title {
+  .header__title {
     margin-inline-start: -0.18em;
   }
 
@@ -306,9 +306,12 @@
     --section-margin: 50px;
   }
 
+  .header__title {
+    margin-inline-start: 0;
+  }
+
   .title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    margin-inline-start: 0;
   }
 
   .header__text-container {
