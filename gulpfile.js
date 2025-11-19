@@ -14,7 +14,14 @@ function html() {
 
 function css() {
   return gulp
-    .src('src/**/*.css')
+    .src([
+      './src/fonts/fonts.css',
+      './src/styles/variables.css',
+      './src/styles/globals.css',
+      './src/styles/style.css',
+      './src/styles/dark.css',
+      './src/styles/light.css',
+    ])
     .pipe(plumber())
     .pipe(concat('bundle.css'))
     .pipe(gulp.dest('dist/'))
@@ -23,7 +30,7 @@ function css() {
 
 function images() {
   return gulp
-    .src('src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}', {encoding: false})
+    .src('src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}', { encoding: false })
     .pipe(gulp.dest('dist/images'))
     .pipe(browserSync.reload({ stream: true }));
 }
@@ -59,7 +66,6 @@ function watchFiles() {
   gulp.watch(['src/scripts/**/*.js'], scripts);
 }
 
-
 function serve() {
   browserSync.init({
     server: {
@@ -68,7 +74,7 @@ function serve() {
   });
 }
 
-const watchapp = gulp.parallel(build, watchFiles, serve); 
+const watchapp = gulp.parallel(build, watchFiles, serve);
 
 exports.html = html;
 exports.css = css;
@@ -79,4 +85,3 @@ exports.scripts = scripts;
 exports.build = build;
 exports.watchapp = watchapp;
 exports.default = watchapp;
-
