@@ -1,2 +1,5 @@
 outputs.zip
-/makets
+makets/
+node_modules/
+dist/
+
