@@ -158,10 +158,6 @@
   font-size: 1.125rem;
 }
 
-.margin-bottom-10px {
-  margin-block-end: 10px;
-}
-
 .main__card-text:not(:last-of-type) {
   margin-block-end: 10px;
 }
