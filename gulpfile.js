@@ -37,7 +37,7 @@ function images() {
 
 function fonts() {
   return gulp
-    .src('src/fonts/**/*.{woff,woff2}')
+    .src('src/fonts/**/*.{woff,woff2}', {encoding: false})
     .pipe(gulp.dest('dist/fonts'))
     .pipe(browserSync.reload({ stream: true }));
 }
